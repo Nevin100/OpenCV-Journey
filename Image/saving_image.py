@@ -1,8 +1,10 @@
 import cv2
 
+# Loading of Image
 image = cv2.imread("./flower.jpeg")
 
 if image is not None:
+  # Saving the image :
   success = cv2.imwrite("Output_python.png", image)
   
   if success:
@@ -13,4 +15,3 @@ if image is not None:
     
 else:
   print('Error: image could not be loaded')
-  
